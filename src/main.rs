@@ -21,5 +21,5 @@ pub fn main() {
     let (doc, buffers, images) = gltf::import(Path::new(matches.value_of("gltf").unwrap()))
         .expect("Import error");
     let gltfdata = GltfData {doc, buffers, images};
-    //print_tree(&gltfdata);
+    print_tree(&gltfdata);
 }
